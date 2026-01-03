@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d4168c7622.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+    <title>MediaMonkey</title>
+</head>
+<body>
+    <section id="landing">
+            
+            <section class="nav__row">
+            <div class="logo__img--wrapper">
+                    <img class="logo__img logo__img--TV" src="./assets/TVicon.svg" alt="">
+                    <img class="logo__img logo__img--monkey" src="./assets/MonkeyIcon.svg" alt="">
+                </div>
+                    <h2 class="logo__title">MediaMonkey</h2>
+
+                    
+                <ul class="nav__link--list">
+                    <li class="nav__link">
+                    <a href="#" class="nav__link--anchor">
+                        Home</a>
+                    </li>
+                    <li class="nav__link">
+                    <a href="#" class="nav__link--anchor ">
+                        Search</a>
+                    </li>
+                    <li class="nav__link">
+                    <a href="#" class="nav__link--anchor">
+                        Contact</a>
+                    </li>
+                    <li class="nav__link">
+                    <a href="#" class="nav__link--anchor">
+                        <i class="fa-solid fa-circle-half-stroke"></i></a>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+        <section id="search">
+            <div class="search__row">
+                <div class="search__text">
+                    <h1 class="search__title">Welcome to MediaMonkey</h1>
+                    <p class="search__subtitle">The ultimate movie search engine</p>
+                </div>
+                <div class="search-bar">
+                <input type="text" class="search__input" placeholder="Search for movies" onchange="onSearchChange(event)">
+                <button class="mag"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            </div>
+        </section>
+
+        <section class="results">
+            <h2 class="results__title">Search Results for ""</h2>
+            <div class="results__grid">
+                
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer__logo--wrapper">
+                    <img class="footer__logo--img footer__tv" src="./assets/TVicon.svg" alt="">
+                    <img class="footer__logo--img footer__monkey" src="./assets/MonkeyIcon.svg" alt="">
+                </div>
+
+
+            <p class="copyright">© 2026 MediaMonkey. All rights reserved.</p>
+            
+            <ul class="footer__links">
+                <li class="footer__link"><a href="#" class="footer__link-anchor">
+                    <i class="fa-brands fa-facebook"></i>
+                </a></li>
+                <li class="footer__link"><a href="#" class="footer__link-anchor">
+                    <i class="fa-brands fa-twitter"></i>
+                </a></li>
+                <li class="footer__link"><a href="#" class="footer__link-anchor">
+                    <i class="fa-brands fa-github"></i>
+                </a></li>
+            </ul>
+
+        </footer>
+</body>
+</html>
