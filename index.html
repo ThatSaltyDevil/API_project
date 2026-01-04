@@ -9,6 +9,29 @@
     <title>MediaMonkey</title>
 </head>
 <body>
+    <div class="menu">
+            <button class="close__btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-times"></i>
+            </button>
+                    <ul class="menu__link--list">
+                    <li class="menu__link">
+                    <a href="#" class="menu__link--anchor">
+                        Home</a>
+                    </li>
+                    <li class="menu__link">
+                    <a href="#" class="menu__link--anchor menu__link--active">
+                        Search</a>
+                    </li>
+                    <li class="menu__link">
+                    <a href="#" class="menu__link--anchor">
+                        Contact</a>
+                    </li>
+                    <li class="menu__link">
+                    <a href="#" class="menu__link--anchor" onclick="toggleDarkMode()">
+                        <i class="fa-solid fa-circle-half-stroke"></i></a>
+                    </li>
+                </ul>
+                </div>
     <section id="landing">
             
             <section class="nav__row">
@@ -37,6 +60,12 @@
                         <i class="fa-solid fa-circle-half-stroke"></i></a>
                     </li>
                 </ul>
+
+                <div class="nav__hamburger" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                
             </section>
 
         </section>
@@ -57,7 +86,7 @@
             
                 <h2 class="results__title">Search Results for ""</h2>
             <div class="results__options">
-                <select class="results__sort" onselect="onSortChange(event)">
+                <select class="results__sort" onchange="onSortChange(event)">
                     <option value="default">Sort By</option>
                     <option value="title-asc">Title (A-Z)</option>
                     <option value="title-desc">Title (Z-A)</option>

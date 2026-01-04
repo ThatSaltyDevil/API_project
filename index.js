@@ -66,3 +66,8 @@ function onSortChange(event) {
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
 }
+
+function toggleMenu() {
+    const modalMenu = document.querySelector('.menu')
+    modalMenu.classList.toggle('menu__visible')
+}
