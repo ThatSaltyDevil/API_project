@@ -25,7 +25,7 @@
                         Home</a>
                     </li>
                     <li class="nav__link">
-                    <a href="#" class="nav__link--anchor ">
+                    <a href="#" class="nav__link--anchor nav__link--active">
                         Search</a>
                     </li>
                     <li class="nav__link">
@@ -33,7 +33,7 @@
                         Contact</a>
                     </li>
                     <li class="nav__link">
-                    <a href="#" class="nav__link--anchor">
+                    <a href="#" class="nav__link--anchor" onclick="toggleDarkMode()">
                         <i class="fa-solid fa-circle-half-stroke"></i></a>
                     </li>
                 </ul>
@@ -47,14 +47,25 @@
                     <p class="search__subtitle">The ultimate movie search engine</p>
                 </div>
                 <div class="search-bar">
-                <input type="text" class="search__input" placeholder="Search for movies" onchange="onSearchChange(event)">
+                <input type="text" class="search__input" placeholder="Search for movies" onkeypress="onSearchChange(event)">
                 <button class="mag"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             </div>
         </section>
 
         <section class="results">
-            <h2 class="results__title">Search Results for ""</h2>
+            
+                <h2 class="results__title">Search Results for ""</h2>
+            <div class="results__options">
+                <select class="results__sort" onchange="onSortChange(event)">
+                    <option value="default">Sort By</option>
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                    <option value="year-asc">Year (Ascending)</option>
+                    <option value="year-desc">Year (Descending)</option>
+                </select>
+            </div>
+            <i class="fa-solid fa-spinner"></i>
             <div class="results__grid">
                 
             </div>
@@ -64,19 +75,23 @@
             <div class="footer__logo--wrapper">
                     <img class="footer__logo--img footer__tv" src="./assets/TVicon.svg" alt="">
                     <img class="footer__logo--img footer__monkey" src="./assets/MonkeyIcon.svg" alt="">
-                </div>
-
-
-            <p class="copyright">© 2026 MediaMonkey. All rights reserved.</p>
+            </div>
             
+            <p class="copyright">© 2026 MediaMonkey. All rights reserved.</p>
+            <div class="back-to-top">
+                <p class="top__text">Top</p>
+                <a class="top__anchor" href="#landing">
+                    <i class="fa-solid fa-circle-up"></i>
+                </a>
+            </div>
             <ul class="footer__links">
-                <li class="footer__link"><a href="#" class="footer__link-anchor">
+                <li class="footer__link"><a href="#" class="footer__link--anchor">
                     <i class="fa-brands fa-facebook"></i>
                 </a></li>
-                <li class="footer__link"><a href="#" class="footer__link-anchor">
+                <li class="footer__link"><a href="#" class="footer__link--anchor">
                     <i class="fa-brands fa-twitter"></i>
                 </a></li>
-                <li class="footer__link"><a href="#" class="footer__link-anchor">
+                <li class="footer__link"><a href="#" class="footer__link--anchor">
                     <i class="fa-brands fa-github"></i>
                 </a></li>
             </ul>
