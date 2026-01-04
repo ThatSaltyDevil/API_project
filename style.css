@@ -385,7 +385,8 @@ RESULTS STYLES
 
 .results__card--img {
     width: calc(100% / 2 - 16px);
-    
+    object-fit: contain;
+    height: 100%;
 }
 
 .results__card--info {
@@ -543,6 +544,10 @@ footer {
 
     .nav__hamburger {
         display: block;
+    }
+
+    .results__card {
+        width: 100%;
     }
 
     .search__row {
